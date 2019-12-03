@@ -94,4 +94,4 @@ START-OF-SELECTION.
 
   DATA(fuel_counter) = NEW lcl_fuel_counter( it_masses = lt_masses ).
 
-  WRITE: fuel_counter->run( ).
+  cl_demo_output=>display( fuel_counter->run( ) ).
